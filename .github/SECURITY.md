@@ -5,12 +5,7 @@ we wish to avoid leaving the ecosystem worse than we found it.
 
 ## Supported Versions
 
-Any issues with minor versions will be investigated whilst this project is in early
-development, however we may recommend updated to the latest pre-v1.0 version.
-
-| Version | Supported          |
-| ------- | ------------------ |
-| < 1.0   | :white_check_mark: |
+Where appropriate, we will indicate which versions of a specific project are supported.
 
 ## Reporting a Bug or Vulnerability
 
