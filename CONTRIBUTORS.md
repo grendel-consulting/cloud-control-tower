@@ -14,7 +14,7 @@ to the list of contributors below. Further information is in our
 
 - Your name here?
 
-## Bots (and GitHubs Apps)
+## Bots (and GitHub Apps)
 
 - [@coderabbitai](https://github.com/apps/coderabbitai)
 - [@step-security-bot](https://github.com/step-security-bot)

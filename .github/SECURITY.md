@@ -1,6 +1,6 @@
 # Security Policy and Procedures
 
-Our security policies and procedures for this project are outlined below. Broadly,
+Our security policies and procedures as a whole are outlined below. Broadly,
 we wish to avoid leaving the ecosystem worse than we found it.
 
 ## Supported Versions
@@ -16,7 +16,7 @@ development, however we may recommend updated to the latest pre-v1.0 version.
 
 We take all security bugs in our projects seriously. Thank you for improving the
 security of them. We appreciate your efforts and responsible disclosure, and will
-make every effort to acknowledge your contributions. At this time we do not run
+make every effort to acknowledge your contributions. At this time, we do not run
 a formal bug bounty programme.
 
 Report security bugs by emailing us at
@@ -80,7 +80,7 @@ with existing techniques and good practise.
 
 ## Providing Feedback
 
-If you have suggestions on how this process could be improved please submit a
+If you have suggestions on how this process could be improved, please submit a
 pull request.
 
 ## Versions
