@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "@mdx-js/react": "3.0.1"
   }
 }
