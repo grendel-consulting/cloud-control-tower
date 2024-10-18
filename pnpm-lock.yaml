@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@mdx-js/react':
-        specifier: 3.0.1
-        version: 3.0.1(@types/react@18.2.79)(react@18.2.0)
+        specifier: 3.1.0
+        version: 3.1.0(@types/react@18.2.79)(react@18.2.0)
     devDependencies:
       typescript:
         specifier: 5.6.3
@@ -18,8 +18,8 @@ importers:
 
 packages:
 
-  '@mdx-js/react@3.0.1':
-    resolution: {integrity: sha512-9ZrPIU4MGf6et1m1ov3zKf+q9+deetI51zprKB1D/z3NOb+rUxxtEl3mCjW5wTGh6VhRdwPueh1oRzi6ezkA8A==}
+  '@mdx-js/react@3.1.0':
+    resolution: {integrity: sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ==}
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
@@ -54,7 +54,7 @@ packages:
 
 snapshots:
 
-  '@mdx-js/react@3.0.1(@types/react@18.2.79)(react@18.2.0)':
+  '@mdx-js/react@3.1.0(@types/react@18.2.79)(react@18.2.0)':
     dependencies:
       '@types/mdx': 2.0.13
       '@types/react': 18.2.79
