@@ -1,14 +1,14 @@
-name: "CodeQL"
+name: codeql
 
 on:
+  schedule:
+    - cron: '32 04 * * 5' # Every Friday at 04:32 UTC
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
     paths-ignore:
       - '**/*.md'
-  schedule:
-    - cron: '32 07 * * 3'
 
 permissions: {}
 
@@ -25,6 +25,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
+        - language: javascript
+          build-mode: none
         - language: typescript
           build-mode: none
 
@@ -53,7 +55,7 @@ jobs:
         build-mode: ${{ matrix.build-mode }}
         queries: security-extended
 
-    - name: Perform CodeQL Analysis
+    - name: Perform Analysis
       uses: github/codeql-action/analyze@39edc492dbe16b1465b0cafca41432d857bdb31a # v3.29.1
       with:
         category: "/language:${{matrix.language}}"
