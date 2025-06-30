@@ -15,7 +15,7 @@
     },
     "e2e": {
       "dependsOn": ["^build"],
-      "passThroughEnv": ["PLAYWWRIGHT_*"]
+      "passThroughEnv": ["PLAYWRIGHT_*"]
     },
     "lint": {
       "dependsOn": ["^lint"]

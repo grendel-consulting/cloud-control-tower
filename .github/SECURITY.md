@@ -56,7 +56,7 @@ in this section together with things to watch out for.
 
 ### Our Security Toolchain
 
-- GitHub [Advisories](https://github.com/grendel-consulting/www.grendel-realms.com/security/advisories)
+- GitHub [Advisories](https://github.com/grendel-consulting/cloud-control-tower/security/advisories)
 - [Renovate](https://renovate.whitesourcesoftware.com/)
 - [StepSecurity](https://www.stepsecurity.io/)
 - [SocketDev](https://socket.dev/)
