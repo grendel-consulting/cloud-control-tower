@@ -2,9 +2,9 @@ name: scorecard
 on:
   branch_protection_rule:
   schedule:
-    - cron: '32 04 * * 6' # Every Saturday at 04:32 UTC
+    - cron: "32 04 * * 6" # Every Saturday at 04:32 UTC
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 permissions: {}
 

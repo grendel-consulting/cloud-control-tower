@@ -12,11 +12,11 @@
     "build": "turbo run build",
     "start": "turbo run start",
     "lint": "turbo run lint",
-    "format": "prettier  --ignore-path .gitignore --write \"**/*.{json,ts,tsx,md,yml,astro}\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{json,ts,tsx,md,yml,astro}\""
   },
   "devDependencies": {
     "only-allow": "1.2.1",
-    "prettier": "3.6.0",
+    "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
     "turbo": "2.5.4",
     "typescript": "5.8.3"

@@ -98,7 +98,6 @@ All notable changes to this policy should be noted below. We use
 - 1.0.0 (2024-04-10) - Initial policy and procedures
 - 1.1.0 (2025-06-27) - Clarification of checklist keywords and tooling
 
-
 ## Attribution
 
 Thanks to [@trewaters](https://github.com/trewaters) for their thoughts on
