@@ -38,9 +38,15 @@ importers:
       '@astrojs/ts-plugin':
         specifier: 1.10.4
         version: 1.10.4
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       astro:
         specifier: 5.10.1
         version: 5.10.1(@types/node@24.0.7)(rollup@4.44.1)(typescript@5.8.3)(yaml@2.8.0)
+      eslint:
+        specifier: 9.30.0
+        version: 9.30.0
       sharp:
         specifier: ^0.34.2
         version: 0.34.2
