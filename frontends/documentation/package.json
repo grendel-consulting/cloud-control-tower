@@ -18,7 +18,7 @@
     "@repo/eslint-config": "workspace:*",
     "astro": "5.10.1",
     "eslint": "9.30.0",
-    "sharp": "^0.34.2",
+    "sharp": "0.34.2",
     "typescript": "5.8.3"
   }
 }
