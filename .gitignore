@@ -1,10 +1,13 @@
-.cache/
-.turbo/
-node_modules/
+.turbo
+.vscode
+.env
 
-/build
+# Local Packages and Build Outputs
+node_modules
 
-.docusaurus
-.cache-loader
+# Debugging
+pnpm-debug.log*
+*storybook.log
 
+# Miscellaneous
 .DS_Store
