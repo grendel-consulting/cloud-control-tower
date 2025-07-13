@@ -3,6 +3,8 @@
 .env
 
 # Local Packages and Build Outputs
+.astro/
+dist/
 node_modules
 
 # Debugging
