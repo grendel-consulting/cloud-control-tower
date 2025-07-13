@@ -1,4 +1,4 @@
-import { config } from '@repo/eslint-config/base';
+import { webConfig } from "@repo/eslint-config/web";
 
 /** @type {import("eslint").Linter.Config} */
-export default config;
+export default webConfig;
