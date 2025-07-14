@@ -3,7 +3,7 @@ export function checkHttpUrl(candidate: string): boolean {
   try {
     candidateUrl = new URL(candidate);
   } catch (error) {
-    console.log("error is", error);
+    console.debug(`Invalid URL format: ${candidate}`, error)
     return false;
   }
   return (
