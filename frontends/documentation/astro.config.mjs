@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://grendel-consulting.github.io',
+	base: '/cloud-control-tower',
 	integrations: [
 		starlight({
 			title: 'Cloud Control Tower',
