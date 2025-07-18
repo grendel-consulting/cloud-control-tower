@@ -1,11 +1,11 @@
 /** @type {import("prettier").Config} */
 export default {
-  plugins: ['prettier-plugin-astro', 'prettier-plugin-gherkin'],
+  plugins: ["prettier-plugin-astro", "prettier-plugin-gherkin"],
   overrides: [
     {
-      files: '*.astro',
+      files: "*.astro",
       options: {
-        parser: 'astro',
+        parser: "astro",
       },
     },
   ],
