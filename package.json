@@ -12,7 +12,7 @@
     "build": "turbo run build",
     "start": "turbo run start",
     "lint": "turbo run lint",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,ts,tsx,md,mdx,yml,astro,feature}\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,mjs,json,ts,tsx,md,mdx,yml,astro,feature}\""
   },
   "devDependencies": {
     "only-allow": "1.2.1",
