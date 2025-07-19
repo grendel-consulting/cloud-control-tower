@@ -10,11 +10,14 @@
     "check-types": {
       "dependsOn": ["^check-types"]
     },
+    "browsers": {
+      "dependsOn": ["^browsers"]
+    },
     "ci": {
       "dependsOn": ["build", "e2e"]
     },
     "e2e": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "browsers"],
       "passThroughEnv": ["PLAYWRIGHT_*"]
     },
     "lint": {
