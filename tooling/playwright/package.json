@@ -6,7 +6,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "browsers": "pnpm playwright install --with-deps --only-shell chromium",
+    "browsers": "pnpm playwright install --only-shell chromium",
     "e2e": "pnpm bddgen && pnpm playwright test --project=chromium"
   },
   "devDependencies": {
