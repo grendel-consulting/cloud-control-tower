@@ -73,7 +73,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: pnpm install
 
       - name: Build Documentation
@@ -97,3 +97,73 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
+
+  confidence:
+    needs: deploy
+
+    permissions:
+      contents: read
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
+        with:
+          disable-sudo-and-containers: false
+          egress-policy: block
+          allowed-endpoints: >
+            github.com:443
+            api.github.com:443
+            nodejs.org:443
+            registry.npmjs.org:443
+            telemetry.astro.build:443
+            telemetry.vercel.com:443
+            azure.archive.ubuntu.com:443
+            archive.ubuntu.com:443
+            esm.ubuntu.com:443
+            security.ubuntu.com:443
+            cdn.playwright.dev:443
+            playwright.download.prss.microsoft.com:443
+            grendel-consulting.github.io:443
+
+      - name: Checkout Repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          show-progress: false
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        id: pnpm-install
+        with:
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Get Store Directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup Cache
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Install Browsers
+        run: pnpm run browsers
+
+      - name: Run Confidence Tests
+        run: pnpm run e2e
