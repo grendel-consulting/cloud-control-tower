@@ -19,6 +19,6 @@
   "timezone": "Europe/London",
   "vulnerabilityAlerts": {
     "labels": ["security"],
-    "assignees": ["@ramirezj"]
+    "assignees": ["ramirezj"]
   }
 }

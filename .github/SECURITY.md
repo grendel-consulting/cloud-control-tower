@@ -68,9 +68,9 @@ in this section together with things to watch out for.
 We use the keywords "MUST", "MUST NOT", and "SHOULD" in this document
 as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-- [ ] You MUST encode, escape and validate any inputs
-- [ ] You MUST NOT commit secrets, passwords or keys
-- [ ] You SHOULD pin any new dependencies
+- You MUST encode, escape and validate any inputs
+- You MUST NOT commit secrets, passwords or keys
+- You SHOULD pin any new dependencies
 
 ### Recommendations
 
