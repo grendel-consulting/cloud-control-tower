@@ -16,6 +16,17 @@
     "browsers": "turbo run browsers",
     "e2e": "turbo run e2e"
   },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead"
+    ],
+    "development": [
+      "last 2 Chrome versions",
+      "last 1 Firefox versions",
+      "last 1 Safari versions"
+    ]
+  },
   "devDependencies": {
     "only-allow": "1.2.1",
     "prettier": "3.6.2",
