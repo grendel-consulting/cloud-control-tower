@@ -104,8 +104,8 @@ importers:
         specifier: 24.1.0
         version: 24.1.0
       dotenv:
-        specifier: 17.2.0
-        version: 17.2.0
+        specifier: 17.2.1
+        version: 17.2.1
       playwright-bdd:
         specifier: 8.3.1
         version: 8.3.1(@playwright/test@1.54.1)
@@ -1390,8 +1390,8 @@ packages:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
 
-  dotenv@17.2.0:
-    resolution: {integrity: sha512-Q4sgBT60gzd0BB0lSyYD3xM4YxrXA9y4uBDof1JNYGzOXrQdQ6yX+7XIAqoFOGQFOTK1D3Hts5OllpxMDZFONQ==}
+  dotenv@17.2.1:
+    resolution: {integrity: sha512-kQhDYKZecqnM0fCnzI5eIv5L4cAe/iRI+HqMbO/hbRdTAeXDG+M9FjipUxNfbARuEg4iHIbhnhs78BCHNbSxEQ==}
     engines: {node: '>=12'}
 
   dset@3.1.4:
@@ -4429,7 +4429,7 @@ snapshots:
 
   dotenv@16.0.3: {}
 
-  dotenv@17.2.0: {}
+  dotenv@17.2.1: {}
 
   dset@3.1.4: {}
 
