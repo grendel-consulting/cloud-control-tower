@@ -37,7 +37,7 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)
       '@astrojs/starlight':
         specifier: 0.36.0
-        version: 0.36.0(astro@5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))
+        version: 0.36.0(astro@5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))
       '@astrojs/ts-plugin':
         specifier: 1.10.4
         version: 1.10.4
@@ -45,8 +45,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/eslint-config
       astro:
-        specifier: 5.13.9
-        version: 5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
+        specifier: 5.13.10
+        version: 5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
       eslint:
         specifier: 9.36.0
         version: 9.36.0
@@ -127,6 +127,9 @@ packages:
   '@astrojs/internal-helpers@0.7.2':
     resolution: {integrity: sha512-KCkCqR3Goym79soqEtbtLzJfqhTWMyVaizUi35FLzgGSzBotSw8DB1qwsu7U96ihOJgYhDk2nVPz+3LnXPeX6g==}
 
+  '@astrojs/internal-helpers@0.7.3':
+    resolution: {integrity: sha512-6Pl0bQEIChuW5wqN7jdKrzWfCscW2rG/Cz+fzt4PhSQX2ivBpnhXgFUCs0M3DCYvjYHnPVG2W36X5rmFjZ62sw==}
+
   '@astrojs/language-server@2.15.4':
     resolution: {integrity: sha512-JivzASqTPR2bao9BWsSc/woPHH7OGSGc9aMxXL4U6egVTqBycB3ZHdBJPuOCVtcGLrzdWTosAqVPz1BVoxE0+A==}
     hasBin: true
@@ -144,6 +147,9 @@ packages:
 
   '@astrojs/markdown-remark@6.3.6':
     resolution: {integrity: sha512-bwylYktCTsLMVoCOEHbn2GSUA3c5KT/qilekBKA3CBng0bo1TYjNZPr761vxumRk9kJGqTOtU+fgCAp5Vwokug==}
+
+  '@astrojs/markdown-remark@6.3.7':
+    resolution: {integrity: sha512-KXGdq6/BC18doBCYXp08alHlWChH0hdD2B1qv9wIyOHbvwI5K6I7FhSta8dq1hBQNdun8YkKPR013D/Hm8xd0g==}
 
   '@astrojs/mdx@4.3.0':
     resolution: {integrity: sha512-OGX2KvPeBzjSSKhkCqrUoDMyzFcjKt5nTE5SFw3RdoLf0nrhyCXBQcCyclzWy1+P+XpOamn+p+hm1EhpCRyPxw==}
@@ -1056,8 +1062,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro@5.13.9:
-    resolution: {integrity: sha512-vwnJ9Db/X35G3n7F2KgcAAsQ7Du00s0ZFvB+Sx0w7Jl4fwit4+mHJbL4U2ZFxIo9tU07oZEey/2g1Awom7i0LQ==}
+  astro@5.13.10:
+    resolution: {integrity: sha512-PgIrIYvrR7fCoSPPt1sGlpoYK/FNil1BwKazND1DyaZC7SbWLi9hdIHM3ApdrL2SWK7oiADRPw7cTn80UyDWqA==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2931,6 +2937,8 @@ snapshots:
 
   '@astrojs/internal-helpers@0.7.2': {}
 
+  '@astrojs/internal-helpers@0.7.3': {}
+
   '@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)':
     dependencies:
       '@astrojs/compiler': 2.12.2
@@ -3009,12 +3017,38 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.0(astro@5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))':
+  '@astrojs/markdown-remark@6.3.7':
+    dependencies:
+      '@astrojs/internal-helpers': 0.7.3
+      '@astrojs/prism': 3.3.0
+      github-slugger: 2.0.0
+      hast-util-from-html: 2.0.3
+      hast-util-to-text: 4.0.2
+      import-meta-resolve: 4.2.0
+      js-yaml: 4.1.0
+      mdast-util-definitions: 6.0.0
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.2
+      remark-smartypants: 3.0.2
+      shiki: 3.12.2
+      smol-toml: 1.4.2
+      unified: 11.0.5
+      unist-util-remove-position: 5.0.0
+      unist-util-visit: 5.0.0
+      unist-util-visit-parents: 6.0.1
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@astrojs/mdx@4.3.0(astro@5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.2
       '@mdx-js/mdx': 3.1.0(acorn@8.15.0)
       acorn: 8.15.0
-      astro: 5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
+      astro: 5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -3038,17 +3072,17 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/starlight@0.36.0(astro@5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))':
+  '@astrojs/starlight@0.36.0(astro@5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.6
-      '@astrojs/mdx': 4.3.0(astro@5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))
+      '@astrojs/mdx': 4.3.0(astro@5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))
       '@astrojs/sitemap': 3.4.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
-      astro-expressive-code: 0.41.2(astro@5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))
+      astro: 5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
+      astro-expressive-code: 0.41.2(astro@5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -3949,16 +3983,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-expressive-code@0.41.2(astro@5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)):
+  astro-expressive-code@0.41.2(astro@5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)):
     dependencies:
-      astro: 5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
+      astro: 5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0)
       rehype-expressive-code: 0.41.2
 
-  astro@5.13.9(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0):
+  astro@5.13.10(@types/node@24.5.2)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
-      '@astrojs/internal-helpers': 0.7.2
-      '@astrojs/markdown-remark': 6.3.6
+      '@astrojs/internal-helpers': 0.7.3
+      '@astrojs/markdown-remark': 6.3.7
       '@astrojs/telemetry': 3.3.0
       '@capsizecss/unpack': 2.4.0
       '@oslojs/encoding': 1.1.0
