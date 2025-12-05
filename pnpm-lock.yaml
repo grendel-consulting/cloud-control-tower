@@ -12,8 +12,8 @@ importers:
   .:
     devDependencies:
       only-allow:
-        specifier: 1.2.1
-        version: 1.2.1
+        specifier: 1.2.2
+        version: 1.2.2
       prettier:
         specifier: 3.7.3
         version: 3.7.3
@@ -2099,8 +2099,8 @@ packages:
   oniguruma-to-es@4.3.3:
     resolution: {integrity: sha512-rPiZhzC3wXwE59YQMRDodUwwT9FZ9nNBwQQfsd1wfdtlKEyCdRV0avrTcSZ5xlIvGRVPd/cx6ZN45ECmS39xvg==}
 
-  only-allow@1.2.1:
-    resolution: {integrity: sha512-M7CJbmv7UCopc0neRKdzfoGWaVZC+xC1925GitKH9EAqYFzX9//25Q7oX4+jw0tiCCj+t5l6VZh8UPH23NZkMA==}
+  only-allow@1.2.2:
+    resolution: {integrity: sha512-uxyNYDsCh5YIJ780G7hC5OHjVUr9reHsbZNMM80L9tZlTpb3hUzb36KXgW4ZUGtJKQnGA3xegmWg1BxhWV0jJA==}
     hasBin: true
 
   optionator@0.9.4:
@@ -5492,7 +5492,7 @@ snapshots:
       regex: 6.0.1
       regex-recursion: 6.0.2
 
-  only-allow@1.2.1:
+  only-allow@1.2.2:
     dependencies:
       which-pm-runs: 1.1.0
 
