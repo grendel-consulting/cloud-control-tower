@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.8",
+    "@astrojs/check": "0.9.9",
     "@astrojs/starlight": "0.37.7",
     "@astrojs/ts-plugin": "1.10.7",
     "@repo/eslint-config": "workspace:*",
