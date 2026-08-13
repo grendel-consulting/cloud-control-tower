@@ -107,8 +107,8 @@ importers:
         specifier: 17.4.2
         version: 17.4.2
       playwright-bdd:
-        specifier: 8.5.0
-        version: 8.5.0(@playwright/test@1.59.1)
+        specifier: 8.5.1
+        version: 8.5.1(@playwright/test@1.59.1)
 
 packages:
 
@@ -2513,8 +2513,8 @@ packages:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
-  playwright-bdd@8.5.0:
-    resolution: {integrity: sha512-w/Bd5C1d6Xe5e1oREsbt2rDN0/Mcp+J2OjQwSl49/mroa2K6UZU33P7v91pLQPl1otDitMwJOaOeJsqaj7WU7w==}
+  playwright-bdd@8.5.1:
+    resolution: {integrity: sha512-lDNaDzW8RvbvsKuR8cZaP9LBnRbG9juCOE3tgwm3pr1O0W1ooGPz7X8xH7zdUbqGgHbdOQ+5XpUTlOJrvpY6Tw==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -6125,7 +6125,7 @@ snapshots:
 
   picomatch@4.0.5: {}
 
-  playwright-bdd@8.5.0(@playwright/test@1.59.1):
+  playwright-bdd@8.5.1(@playwright/test@1.59.1):
     dependencies:
       '@cucumber/cucumber-expressions': 18.0.1
       '@cucumber/gherkin': 32.2.0
@@ -6548,7 +6548,7 @@ snapshots:
     dependencies:
       emoji-regex: 10.4.0
       get-east-asian-width: 1.3.0
-      strip-ansi: 7.1.0
+      strip-ansi: 7.2.0
 
   string-width@8.2.2:
     dependencies:
@@ -6903,7 +6903,7 @@ snapshots:
     dependencies:
       ansi-styles: 6.2.1
       string-width: 7.2.0
-      strip-ansi: 7.1.0
+      strip-ansi: 7.2.0
 
   xmlbuilder@15.1.1: {}
 
